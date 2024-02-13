@@ -6,22 +6,132 @@
         <title>Trilha HTML</title>
     </head>
     <body>
-        <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-        <ol>
-            <li><a>Primeniros computadores</a></li>
-            <li><a>Surgimento da internet</a></li>
-            <li><a>O que são clientes</a></li>
-            <li><a>O que são Servers</a></li>
-            <li>
-                <code><a>Introdução ao HTML</a></code>
-                <ol>
-                    <li><a>Falando sobre Tags</a></li>
-                    <li><a>Principais Tags</a></li>
-                    <li><a>Falando sobre Atributos</a></li>
-                </ol>
-            </li>            
-        </ol>
+        <header>
+            <br>
+            <h1 id="menu">Módulo 1 - Primeiros Passos com HTML</h1>
+            <ol>
+                <li><a href="#web">Surgimento da internet</a></li>
+                <li><a href="#client">O que são clientes</a></li>
+                <li><a href="#servers">O que são Servers</a></li>
+                <li>
+                    <a href="#html">Introdução ao HTML</a>
+                    <ol>
+                        <li><a href="#attributes">Falando sobre Tags</a></li>
+                        
+                    </ol>
+                </li>            
+            </ol><br>
+        </header>
         <hr/>
-        <h2>Primeniros computadores<sub><a>voltar</a></sub></h2>
+        <section id="web">
+            <h2>Primeniros computadores
+                <sub>
+                    <a href="#menu">
+                        <i>voltar</i></a></sub>
+            </h2>
+                <p><Strong>Computadores Primitivos(1940s-1950s):</Strong>
+                Durante a Segunda Guerra Mundial, os primeiros computadores digitais foram desenvolvidos para fins militares, como o Colossus na Grã-Bretanha e o ENIAC nos Estados Unidos.</p>
+
+            
+                <p><Strong>Desenvolvimento da Eletrônica e Circuitos Integrados (1950s-1960s):         </Strong> Avanços na eletrônica levaram ao desenvolvimento de circuitos integrados e transistores, que possibilitaram a construção de computadores menores e mais eficientes.</p>
+            
+                <p><Strong>ARPANET (1960s-1970s):</Strong>
+                    A ARPANET, desenvolvida pelo Departamento de Defesa dos Estados Unidos, foi a precursora da internet moderna. Criada em 1969, foi uma rede experimental que permitia a troca de informações entre computadores distantes.</p>
+            
+                <p><Strong>Protocolo TCP/IP (1970s): </Strong>
+                    O desenvolvimento do Protocolo de Controle de Transmissão/Protocolo de Internet (TCP/IP) estabeleceu os fundamentos da comunicação de rede, permitindo que diferentes redes de computadores se comunicassem entre si.</p>
+
+                <p><Strong>Evolução da World Wide Web (1980s-1990s):</Strong> 
+                    Em 1989, Tim Berners-Lee, um cientista britânico, propôs o conceito da World Wide Web enquanto trabalhava no CERN, na Suíça. Ele desenvolveu o HTML (Hypertext Markup Language), o HTTP (Hypertext Transfer Protocol) e o primeiro navegador web, chamado WorldWideWeb (mais tarde renomeado para Nexus).</p>
+            
+                <p><Strong>Expansão da Web (1990s): </Strong>
+                    A década de 1990 testemunhou uma rápida expansão da web, com a criação de navegadores populares como o Netscape Navigator e o Internet Explorer. A disponibilidade de serviços como e-mail, fóruns online e motores de busca contribuiu para o crescimento exponencial da internet.</p>
+
+                <p><Strong>Dot-com Boom (Final dos anos 1990): </Strong>
+                    O final dos anos 1990 foi marcado pela especulação e pelo crescimento frenético das empresas de tecnologia, muitas das quais relacionadas à internet. Muitas empresas "ponto-com" surgiram e muitas delas faliram durante esse período.</p>
+
+                <p><Strong>Web 2.0 (Início dos anos 2000): </Strong>
+                    A ascensão da Web 2.0 trouxe uma nova era de interatividade e participação dos usuários na web. Sites como Wikipedia, YouTube, Facebook e Twitter exemplificam essa mudança, permitindo que os usuários criassem e compartilhassem conteúdo online.</p>
+
+                <p><Strong>Expansão Global (2000s-Presente):</Strong>
+                    Desde os anos 2000, a internet se tornou uma parte essencial da vida moderna, com bilhões de pessoas conectadas em todo o mundo. A disseminação de dispositivos móveis e o surgimento de tecnologias como a Internet das Coisas (IoT) continuam a moldar a evolução da web.</p>
+                    <h5><a href="#menu">Voltar</a></h5>
+            </section><br><hr>
+        <section>
+            <h2 id="client">O que são clientes
+                <sub>
+                    <a href="#menu">
+                        <i>voltar</i></a></sub>
+            </h2>
+                
+                <p><Strong>Em programação, "clientes"</Strong> referem-se aos dispositivos ou softwares que acessam e interagem com os serviços ou informações fornecidos por um servidor. Geralmente, os clientes são navegadores da web, aplicativos móveis ou outros programas de software que se comunicam com servidores para obter dados, enviar solicitações e exibir conteúdo para os usuários.</p>
+
+                <p><u>No contexto da web</u>, os clientes solicitam páginas da web e recursos ao servidor por meio de solicitações HTTP. O servidor, por sua vez, processa essas solicitações e envia as respostas de volta ao cliente, geralmente na forma de páginas HTML, arquivos de estilo CSS, scripts JavaScript e outros recursos da web.</p>
+
+                <p><b>Os clientes desempenham um papel fundamental</b> na experiência do usuário final, pois são responsáveis por interpretar e exibir o conteúdo recebido do servidor. Por exemplo, os navegadores da web interpretam e renderizam o código HTML, CSS e JavaScript para criar a interface visual com a qual os usuários interagem.</p>
+
+                <p><b>Em resumo</b>, os clientes são os componentes da arquitetura cliente-servidor que interagem com os servidores para acessar e exibir informações na web, desempenhando um papel crucial na interatividade e usabilidade das aplicações web.</p>
+                <h5><a href="#menu">Voltar</a></h5>
+            </section><br><hr>
+            <section>
+                <h2 id="servers">O que são Servers
+                    <sub>
+                        <a href="#menu">
+                            <i>voltar</i></a></sub>
+                </h2>
+                     <p><u>um contexto de computação e redes, os </u><strong>"servidores" </strong>são sistemas de computador ou software dedicados a fornecer serviços, recursos ou dados para outros dispositivos ou programas chamados clientes. Os servidores são fundamentais para a arquitetura cliente-servidor, onde os clientes solicitam e os servidores fornecem recursos ou serviços.</p>
+                    <p> Os servidores podem desempenhar uma variedade de funções, incluindo:</p>
+
+                   <h3><strong>Hospedagem de Sites:</strong></h3> 
+
+                     <p>Os servidores web hospedam sites e aplicativos da web, respondendo a solicitações dos clientes por meio do protocolo HTTP ou HTTPS. Eles armazenam e entregam páginas da web, imagens, arquivos CSS, JavaScript e outros recursos da web para os navegadores dos usuários.</p>
+
+                     <h4><strong>Armazenamento de Dados:</strong></h4> 
+                     <p>Os servidores de banco de dados armazenam e gerenciam grandes volumes de dados, permitindo a recuperação, atualização e manipulação eficientes de informações. Exemplos incluem servidores SQL (como MySQL, PostgreSQL, SQL Server) e servidores NoSQL (como MongoDB, Cassandra).</p> 
+
+                     <h4><strong>E-mail:</strong></h4>
+                     <p> Servidores de e-mail gerenciam a entrega, recebimento e armazenamento de mensagens de e-mail. Eles podem oferecer serviços como SMTP (Simple Mail Transfer Protocol) para envio de e-mails e POP3/IMAP para recebimento e armazenamento.</p> 
+
+                     <h4><strong> Armazenamento de Arquivos:</strong></h4>
+                     <p> Servidores de arquivos fornecem armazenamento centralizado e compartilhamento de arquivos em redes locais ou na nuvem. Eles permitem que os usuários acessem e compartilhem documentos, mídias e outros arquivos de maneira eficiente.</p>
+
+                     <h4><strong>Aplicativos e Serviços Específicos:</strong></h4>
+                     <p> Além dos exemplos mencionados, os servidores podem ser configurados para fornecer uma ampla variedade de serviços especializados, como servidores de jogos, servidores de streaming de mídia, servidores de voz sobre IP (VoIP) e muito mais.</p>
+
+                     <p>Os servidores são projetados para oferecer alta disponibilidade, escalabilidade e segurança para lidar com grandes volumes de solicitações de clientes. Eles geralmente são configurados e mantidos por administradores de sistemas e equipes de operações de rede para garantir um desempenho confiável e seguro.</p>
+                     <h5><a href="#menu">Voltar</a></h5>
+            </section><br><hr>
+        <section>
+            <h2 id="html">
+
+            </h2>
+                <p><u>HTML, ou HyperText Markup</u> Language, é a linguagem de marcação padrão usada para criar e estruturar páginas da web. Desenvolvido por Tim Berners-Lee no início dos anos 1990, o HTML fornece a estrutura básica para o conteúdo de uma página da web, permitindo que os desenvolvedores definam elementos e sua organização.</p>
+                
+                <p><strong>Estrutura Básica:</strong> Um documento HTML é estruturado em elementos que são marcados usando tags HTML. Cada elemento começa com uma tag de abertura e termina com uma tag de fechamento, encapsulando o conteúdo entre elas.</p>
+
+                <h3 id="attributes">Tags e Elementos:</h3>
+                    <p><strong>As tags HTML </strong>são os blocos de construção básicos do HTML e são usadas para marcar diferentes partes do conteúdo, como títulos, parágrafos, 
+                    listas, imagens, links e muito mais.</p>
+
+                    <p><strong>Estrutura de uma Tag HTML:</strong> Uma tag HTML é composta por um nome, que é delimitado por colchetes angulares "&lt;&gt;" e pode conter atributos e valores opcionais. Por exemplo, a tag de parágrafo é &lt;p&gt;.</p>
+
+                    <p><strong>Tags de Abertura e Fechamento:</strong> A maioria das tags HTML tem uma versão de abertura e uma versão de fechamento. A versão de abertura é simplesmente o nome da tag envolto em colchetes angulares, enquanto a versão de fechamento inclui uma barra "/" antes do nome da tag. Por exemplo, &lt;p> é a tag de abertura para um parágrafo, e &lt;/p&gt; é a tag de fechamento.</p>
+                    
+                    <p><strong>Elementos HTML:</strong> As tags HTML, quando combinadas com seu conteúdo, formam elementos HTML. Por exemplo, &lt;p&gt;Este é um parágrafo</p> é um elemento HTML que define um parágrafo.</p>
+
+                <p><strong>Hierarquia de Documento:</strong> Os elementos HTML podem ser aninhados, criando uma hierarquia de documento. Elementos podem conter outros elementos, criando uma estrutura organizada e hierárquica para o conteúdo da página.</p>
+
+                <p><strong>Atributos:</strong> As tags HTML podem conter atributos que fornecem informações adicionais sobre um elemento. Os atributos geralmente são usados para personalizar o comportamento ou a aparência de um elemento, como a definição de uma URL para um link ou um tamanho para uma imagem.</p>
+
+                <p><strong>Renderização: </strong>Os navegadores da web interpretam o código HTML e o renderizam para exibir o conteúdo da página da web de acordo com as instruções fornecidas pelo desenvolvedor.</p>
+
+                <p><strong>Versões do HTML:</strong> Ao longo dos anos, várias versões do HTML foram desenvolvidas. O HTML5 é a versão mais recente e inclui recursos avançados para a criação de páginas da web modernas, como elementos semânticos, áudio e vídeo nativos, APIs de geolocalização e muito mais.</p>
+
+                <p><strong>Compatibilidade e Padronização:</strong> É importante escrever HTML que seja compatível com os padrões da web e que funcione corretamente em diferentes navegadores e dispositivos. Testar e validar o código HTML é uma prática recomendada para garantir a compatibilidade e a consistência do site.</p>
+
+                <p><strong>O HTML </strong>é a base da web moderna e é essencial para qualquer desenvolvedor web. Ele fornece a estrutura básica para criar páginas da web acessíveis, interativas e visualmente atraentes.</p>
+                <h5><a href="#menu">Voltar</a></h5>
+        </section>
+        
     </body>
 </html>
